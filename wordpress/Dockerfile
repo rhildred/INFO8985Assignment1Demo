@@ -20,7 +20,7 @@ RUN curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.ph
 USER www-data:www-data
 WORKDIR /var/local/wordpress
 
-RUN wp-cli core download
+RUN php -d memory_limit=512M -f /usr/bin/wp-cli core download
 
 RUN mv wp-content wp-content.bak
 RUN mkdir /var/local/wordpress/wp-content
