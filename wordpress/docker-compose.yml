@@ -5,7 +5,7 @@ services:
       - "8000:8000"
     user: "1000:1000"
     volumes:
-      - ./wp-content:/var/local/wordpress/wp-content
+      - ../wp-content:/var/local/wordpress/wp-content
     environment:
       # OTel auto instrumentation config
       # https://opentelemetry.io/docs/instrumentation/php/automatic/#installation
