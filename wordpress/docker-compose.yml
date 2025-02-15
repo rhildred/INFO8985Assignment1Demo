@@ -3,7 +3,7 @@ services:
     build: .
     ports:
       - "8000:8000"
-    user: "www-data:www-data"
+    user: "1000:1000"
     volumes:
       - ./wp-content:/var/local/wordpress/wp-content
     environment:
