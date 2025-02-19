@@ -10,8 +10,7 @@ cat << EOF > wp-content/mu-plugins/0-wp-pwa.php
     add_filter( 'comments_open', function(){
         return false;
     });
-    update_option("permalink_structure","/%postname%/");`
-            );
+    update_option("permalink_structure","/%postname%/");
 EOF    
     cp wp-content/mu-plugins/sqlite-database-integration-develop/db.copy wp-content/db.php
     sed -i "s/\/plugins\/sqlite-database-integration/\/mu-plugins\/sqlite-database-integration-develop/" wp-content/db.php
