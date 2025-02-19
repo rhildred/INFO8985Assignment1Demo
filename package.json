@@ -4,6 +4,6 @@
     },
     "scripts": {
         "postinstall": "echo \"Error: no postinstall specified\" && exit 1",
-        "build": "wp-pwa build && npx diy-pwa index dist"
+        "build": "wp-pwa build INFO8985-observable-monolith && npx diy-pwa index dist"
     }
 }
